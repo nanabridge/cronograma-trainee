@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma de Reuniões</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 Cronograma de Reuniões</h1>
+            <p>Semana de <span id="currentWeek">20-26 de Novembro</span></p>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="prevWeek()">◀ Semana Anterior</button>
+            <button class="btn btn-primary" onclick="nextWeek()">Próxima Semana ▶</button>
+            <button class="btn btn-primary" onclick="today()">Hoje</button>
+            <select id="viewMode" onchange="changeView()">
+                <option value="week">Semana</option>
+                <option value="day">Dia</option>
+            </select>
+            <input type="text" id="search" placeholder="🔍 Buscar reunião..." onkeyup="searchMeetings()">
+            <button class="btn btn-secondary" onclick="newMeeting()">+ Nova Reunião</button>
+        </div>
+
+        <div class="schedule-grid" id="scheduleGrid">
+            <!-- Grid será populado via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Modal para nova reunião -->
+    <div class="modal" id="meetingModal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Nova Reunião</h3>
+            <form id="meetingForm">
+                <div class="form-group">
+                    <label>Título *</label>
+                    <input type="text" id="meetingTitle" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Data *</label>
+                        <input type="date" id="meetingDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Horário *</label>
+                        <input type="time" id="meetingTime" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Duração</label>
+                    <select id="meetingDuration">
+                        <option value="30">30 minutos</option>
+                        <option value="60">1 hora</option>
+                        <option value="90">1h30</option>
+                        <option value="120">2 horas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Participantes</label>
+                    <input type="text" id="meetingParticipants" placeholder="João, Maria, Pedro">
+                </div>
+                <div class="form-group">
+                    <label>Descrição</label>
+                    <textarea id="meetingDescription" rows="3" placeholder="Detalhes da reunião..."></textarea>
+                </div>
+                <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Salvar Reunião</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
