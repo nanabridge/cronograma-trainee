@@ -1,0 +1,15 @@
+{
+  "name": "Cronograma de Reuniões",
+  "short_name": "Cronograma",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSS5JLnN2ZyAoRXhwb3J0ZXIgMTEuMikgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBkPSJNNDY4LDMySDEzNC4zYzAuMy0xLjksMS4yLTMuMywyLjctMy45YzAsMCwwLDAsMCwwYzEuMi0wLjQsMi40LDAuMSwzLjIsMS4xbDE1LjcsMTUuN2wyMC4yLTIwLjJjMC40LTEsMS4yLTEuNiwyLjItMS42aDEyOGMwLTEuMSwwLjktMiwyLTIgICAgYzEuMSwwLDIgMC45LDIsMnYtMzJjMC0xLjEsMC45LTIsMi0yYzEuMSwwLDItMC45LDItMnY0OGMwLDEuMSwwLjksMiwyLDJzLTAuOSwyLTItMnYtMzJjMC0xLjEsMC45LTIsMi0yYzEuMSwwLDItMC45LDItMnY0OGMwLDEuMSwwLjksMiwyLDJzLTAuOSwyLTItMnYtMzIgICAgYzAtMS4xLDAuOS0yLDItMnMxLjEsMC45LDItMnY0OGMwLDEuMSwwLjksMiwyLDIgICAgUzQ2OCwzMS40NjgsNDY4LDMyeiIvPgo8L3N2Zz4K",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
